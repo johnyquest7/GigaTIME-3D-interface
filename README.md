@@ -32,12 +32,14 @@ uv pip install -r requirements.txt
 Upload an H&E image and get multiple images showing different protein expressions
 
 ```bash
+cd scripts
 uv run giga_gradio.py
 ```
 
 ## 3D Demo 
 
 ```bash
+cd scripts 
 uv run gigatime_3d_integrated.py
 ```
 [YouTube Demo](https://youtu.be/qNNQfbKVOns)
