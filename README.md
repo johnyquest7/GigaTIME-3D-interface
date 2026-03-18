@@ -1,4 +1,5 @@
 # GigaTIME: Multimodal AI generates virtual population for tumor microenvironment modeling (Cell)
+#Forked by Johnson Thomas 
 
 <div align="center">
 
@@ -17,19 +18,29 @@
 
 ## Environment Setup
 
-We recommend using Conda for environment management. The codebase has been tested with Python 3.11 using A100 GPUs for optimal reproducibility. Before creating the environment, ensure that the `torch` version specified in `environment.yml` matches your GPU and CUDA driver setup.
+I recommend using UV for environment management. The codebase has been tested with Python 3.11 using A100 GPUs for optimal reproducibility. 
 
 To set up the environment, run:
 
 ```bash
-conda env create -f environment.yml
+uv venv --python 3.11
+source .venv/bin/activate   # macOS/Linux
+uv pip install -r requirements.txt
 ```
 
-This will create a Conda environment named `gigatime`. Activate it with:
+## 2D Demo 
+Upload an H&E image and get multiple images showing different protein expressions
 
 ```bash
-conda activate gigatime
+uv run giga_gradio.py
 ```
+
+## 3D Demo 
+
+```bash
+uv run gigatime_3d_integrated.py
+```
+[YouTube Demo](https://youtu.be/qNNQfbKVOns)
 
 ## Data 
 
