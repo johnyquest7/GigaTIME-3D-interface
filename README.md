@@ -1,5 +1,7 @@
 # GigaTIME: Multimodal AI generates virtual population for tumor microenvironment modeling (Cell)
-#Forked by Johnson Thomas 
+# Forked by Johnson Thomas 
+
+## Made it to work with UV, added 3D and 2D rendering. You upload an H&E image using Gradio, the script will display the results in 2D and 3D
 
 <div align="center">
 
@@ -10,7 +12,6 @@
 [![Microsoft](https://img.shields.io/badge/Microsoft-Research-00A4EF.svg?logo=microsoft)](https://www.microsoft.com/en-us/research/)
 
 
-*Official implementation of GigaTIME*
 
 [📄 Paper](https://aka.ms/gigatime-paper) • [🤗 Model Card](https://aka.ms/gigatime-model) 
 
